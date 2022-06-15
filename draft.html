@@ -147,6 +147,48 @@
         .empty-space {
             height: 250px;
         }
+
+        .footer-row td {
+            color: #666666;
+            font-size: 13.5px;
+            padding-left: 0;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page-footer table {
+            margin-top: 3px;
+        }
+
+        .spacing-right {
+            margin-right: 25.5px;
+        }
+
+        .signature {
+            font-family: "C-School";
+            font-size: 16px;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 20px;
+        }
+
+        .signature span {
+            font-size: 13px;
+        }
+
+        .info {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 100;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -163,7 +205,15 @@
     </div>
 
     <div class="page-footer" style="text-align: center">
-        <p> Armstrong Financial Services Inc. E&OE info@ArmstrongLife.net Tel (833) 603-5500 / Fax (514) 447-1804</p>
+        <table>
+            <tbody>
+            <tr class="footer-row">
+                <td class="spacing-right">Armstrong Financial Services Inc. E&OE</td>
+                <td class="spacing-right">info@ArmstrongLife.net</td>
+                <td>Tel (833) 603-5500 / Fax (514) 447-1804</td>
+            </tr>
+        </tbody>
+        </table>
     </div>
 
     <table>
@@ -238,14 +288,13 @@
                             lacinia, sed lobortis magna congue.
                         </p>
                         </br>
+                    <div>
+                        <h3 class="signature">Sincerely,</h3>
+                        <h3 class="signature">David Emmanuel Kakon, <span>Math Honours B.Sc.</span></h3>
                         </br>
-                        </br>
-                        <h3>Sincerely,</h3>
-                        <h3>David Emmanuel Kakon, <span>Math Honours B.Sc</span></h3>
-                        <h3>Armstrong Financial Services</h3>
-                        <h3>Direct: (514) 574-0233</h3>
-                        <h3>David@ArmstrongLife@ca</h3>
-                        <p>footnotes go here</p>
+                        <h3 class="info">Armstrong Financial Services</h3>
+                        <h3 class="info">Direct: (514) 574-0233</h3>
+                        <h3 class="info">David@ArmstrongLife@ca</h3>
                     </div>
                 </td>
             </tr>

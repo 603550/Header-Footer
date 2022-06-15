@@ -1,1 +1,317 @@
 
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        @font-face {
+            font-family: 'liber-franklin-regular';
+            src: url(fonts/LibreFranklin-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'pt-serif-caption';
+            src: url(fonts/PTSerifCaption-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'C-School';
+            src: url(fonts/Century\ Schoolbook\ Std\ Regular.otf);
+        }
+
+        P {
+            font-family: "New Century Schoolbook", Times, serif
+        }
+
+
+        .page-header,
+        .page-header-space {
+            height: 130px;
+        }
+
+        .page-footer,
+        .page-footer-space {
+            height: 50px;
+
+        }
+
+        .page-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid black;
+            /* for demo */
+            background: #d3d3d3;
+            /* for demo */
+        }
+
+        .page-header {
+            position: fixed;
+            top: 0mm;
+            width: 100%;
+            border-bottom: 1px solid black;
+            /* for demo */
+            background: #1798c1
+                /* for demo */
+        }
+
+        .page {
+            page-break-after: always;
+        }
+
+        @page {
+            margin: 20mm
+        }
+
+        @media print {
+            thead {
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+
+            button {
+                display: none;
+            }
+
+            body {
+                margin: 0;
+            }
+        }
+
+        .bsd {
+            color: #666666;
+            font-weight: lighter;
+            font-size: 12px;
+            font-family: 'liber-franklin-regular';
+            text-align: right;
+        }
+
+        .armstrong-logo-text {
+            font-family: 'pt-serif-caption';
+            font-weight: 300;
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .logo-image {
+            width: 255px;
+            height: auto;
+            display: block;
+        }
+
+        .date {
+            text-align: right;
+            font-size: 14px;
+            color: #999999;
+            font-family: 'liber-franklin-regular';
+            margin-top: 3px;
+            margin-bottom: 2px;
+            font-weight: 100;
+        }
+
+        .title {
+            font-family: "liber-franklin-bold";
+            font-size: 17px;
+            margin-bottom: 3px;
+            height: 18px;
+        }
+
+        .non-bold-title {
+            font-family: "liber-franklin-regular";
+            font-size: 17px;
+            margin-top: 5px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 22px;
+            font-family: "C-School";
+            font-size: 16px;
+        }
+
+        .empty-space {
+            height: 250px;
+        }
+
+        .footer-row td {
+            color: #666666;
+            font-size: 13.5px;
+            padding-left: 0;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page-footer table {
+            margin-top: 3px;
+        }
+
+        .spacing-right {
+            margin-right: 25.5px;
+        }
+
+        .signature {
+            font-family: "C-School";
+            font-size: 16px;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 20px;
+        }
+
+        .signature span {
+            font-size: 13px;
+        }
+
+        .info {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 100;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header" style="text-align: Left">
+        <h3 class="bsd">BS"D</h2>
+            <h1 class="armstrong-logo-text">Armstrong</h1>
+            <img class="logo-image" src="Logo2.png">
+            <br />
+            <button type="button" onClick="window.print()" style="background: #d3d3d3">
+                PRINT PDF
+            </button>
+    </div>
+
+    <div class="page-footer" style="text-align: center">
+        <table>
+            <tbody>
+            <tr class="footer-row">
+                <td class="spacing-right">Armstrong Financial Services Inc. E&OE</td>
+                <td class="spacing-right">info@ArmstrongLife.net</td>
+                <td>Tel (833) 603-5500 / Fax (514) 447-1804</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <td>
+                    <!--place holder for the fixed-position header-->
+                    <div class="page-header-space"></div>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <!--*** CONTENT GOES HERE ***-->
+                    <div class="page" style="line-height: 2;">
+                        <h3 class="date">Montreal, Jun 13, 2022</h3>
+
+                        <h2 class="title">Attn: Mouko Esrele / New Business Case Coordinator BMO</h2>
+                        <h2 class="non-bold-title">Re: Info Needed / RBC Term Policy N783346</h2>
+
+                        <p>Dear Moukoko,</p>
+
+
+
+                        <p> Thank you for your request. Attached is the information we received by FAX from the client's
+                            clinic on May 9th 2021. It is the Ultrasound report from Radimed dated Feb 15th 2022 and
+                            signed by Dr. Kaduri (the diagnostic Radiologist on file, see details below).
+                        </p>
+                        <p>
+                            Dr. Sagi Cohen (Male)</br>
+                            Permit #: 13598 </br>
+                            Specialty: Diagnostic Radiology </br>
+                            Address: Centre Hospitalier de St. Mary 3830 av Lacombe Montréal QC H3T 1M5</br>
+                            Phone: 514-345-3511 </br>
+                            CMQ Link: CMQ.org
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, tortor ut commodo
+                            hendrerit, metus ipsum sodales nulla, et convallis mi eros a ante. Nullam sit amet ornare
+                            mauris. Quisque id lorem quis elite congue lobortis a nec dui. Fusce non nisi egestas,
+                            euismod lectus vitae, ultrices est. Ut massa libero, varius in mi ut, sagittis dignissim
+                            nisl. Nulla volutpat libero quis enim fermentum, eget dapibus diam accumsan. Nullam ornare
+                            dui dolor, eu fermentum nisi scelerisque id. Duis aliquet vestibulum luctus. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
+                            faucibus molestie ipsum vel gnissim.
+                        </p>
+
+                        <p>
+                            Cras euismod felis dui, et rhoncus lorem luctus eu. Integer sed imperdiet urna, in hendrerit
+                            ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque tristique
+                            faucibus metus, aliquam euismod sapien tincidunt nec. Sed faucibus tempor arcu, ac semper
+                            dui ultrices non. Cras maximus elementum velit,
+                            porta orci hendrerit ut. Etiam eu mollis urna, in convallis eros. Nulla et ullamcorper
+                            neque. Aliquam eu varius urna. Phasellus ut auctor augue. Quisque lobortis egestas aliquet.
+                            Praesent elit risus, finibus eu elementum nec, dapibus eu libero. Suspendisse eget felis
+                            vitae diam facilisis posuere. In at augue vel ipsum pretium hendrerit.
+                        </p>
+
+                        <div class="empty-space"></div>
+                        
+                        <p>
+                            Nullam tempus velit arcu, ac efficitur odio condimentum ac. Phasellus sit amet eleifend
+                            nisi, non ornare leo. Proin ac imperdiet justo, nec scelerisque risus. Mauris risus libero,
+                            ullamcorper non urna id, rhoncus euismod lorem. Sed leo orci, ultrices vitae scelerisque
+                            non, vestibulum ut tellus. Fusce rhoncus ornare felis vitae lobortis. Vestibulum at mauris
+                            felis. Praesent feugiat feugiat sem, vel venenatis purus. Vivamus non diam porttitor, mattis
+                            orci vitae, consequat nisi. Morbi blandit tempus dapibus. Aenean fringilla orci id arcu
+                            lacinia, sed lobortis magna congue.
+                        </p>
+                        </br>
+                    <div>
+                        <h3 class="signature">Sincerely,</h3>
+                        <h3 class="signature">David Emmanuel Kakon, <span>Math Honours B.Sc.</span></h3>
+                        </br>
+                        <h3 class="info">Armstrong Financial Services</h3>
+                        <h3 class="info">Direct: (514) 574-0233</h3>
+                        <h3 class="info">David@ArmstrongLife@ca</h3>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <!--place holder for the fixed-position footer-->
+                    <div class="page-footer-space"></div>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

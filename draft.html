@@ -38,9 +38,11 @@
             font-family: "New Century Schoolbook", Times, serif
         }
 
+        
+
         .page-header,
         .page-header-space {
-            height: 160px;
+            height: 150px;
         }
 
         .page-footer,
@@ -77,11 +79,6 @@
             border-right: none;
         }
 
-
-        @page {
-            margin: 22mm
-        }
-
         @media print {
             thead {
                 display: table-header-group;
@@ -94,12 +91,12 @@
             button {
                 display: none;
             }
+        }
 
-            body {
-                margin: 0 10px;
-            }
-
-
+        @page {
+            margin-left: 18mm;
+            margin-right: 20mm;
+            overflow: visible;
         }
 
         .bsd {
@@ -108,7 +105,7 @@
             font-size: 12px;
             font-family: 'liber-franklin-regular';
             text-align: right;
-            margin-right: 10px;
+            margin-right: 35px;
 
         }
 
@@ -132,7 +129,7 @@
             font-size: 14px;
             color: #999999;
             font-family: 'liber-franklin-regular';
-            margin-top: 3px;
+            margin-top: 0px;
             margin-bottom: 2px;
             font-weight: 100;
             z-index: 10;
@@ -143,6 +140,8 @@
             font-size: 17px;
             margin-bottom: 3px;
             height: 18px;
+            position: relative;
+            bottom: 10px;
         }
 
         .non-bold-title {
@@ -151,12 +150,14 @@
             margin-top: 5px;
             font-weight: lighter;
             margin-bottom: 10px;
+            position: relative;
+            bottom: 5px;
         }
 
         p {
             line-height: 22px;
             font-family: "C-School";
-            font-size: 15.5px;
+            font-size: 15.7px;
         }
 
         .empty-space {
@@ -210,12 +211,21 @@
             color: #666666;
             font-family: "Liber-Franklin-italic";
             margin: 1px 0;
-            font-size: 10px;
+            font-size: 13px;
             height: 12px;
             font-weight: 100;
             text-align: left;
+            margin-bottom: 4px
         }
 
+        #pageFooter {
+            display: table-footer-group; 
+        }   
+
+        #pageFooter:after {
+            counter-increment: page;
+            content: counter(page);     
+        }
 
         .footnote-hr {
             margin-top: 20px;
@@ -228,7 +238,39 @@
         }
 
         .footnote-end {
-            margin-top: 240px;
+            margin-top: 400px;
+        }
+
+        .first-page {
+            position: relative;
+            top: 835px;
+            left: 10px;
+        }
+
+        .first-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 100;
+            color: #666666;
+            text-align: right;
+        }
+
+        @page {
+            overflow: visible;
+        }
+
+        .second-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 100;
+            color: #666666;
+            text-align: right; 
+        }
+
+        .second-page {
+            position: relative;
+            top: 533px;
+            left: 10px;
         }
 
     </style>
@@ -256,6 +298,9 @@
                 <td class="spacing-right">info@ArmstrongLife.net</td>
                 <td>Tel (833) 603-5500 / Fax (514) 447-1804</td>
             </tr>
+            <tr>
+                <span id="pageNumber"></span>
+            </tr>
         </tbody>
         </table>
     </div>
@@ -276,8 +321,9 @@
                 <td>
                     <!--*** CONTENT GOES HERE ***-->
                     <div class="page" style="line-height: 2;">
-                        <h3 class="date">Montreal, Jun 13, 2022</h3>
 
+                        <h3 class="date">Montreal, Jun 13, 2022</h3>
+                        <div class="first-page"><h3>1/2</h3></div>
                         <h2 class="title">Attn: Mouko Esrele / New Business Case Coordinator BMO</h2>
                         <h2 class="non-bold-title">Re: Info Needed / RBC Term Policy N783346</h2>
 
@@ -338,6 +384,8 @@
                         <h3 class="info">Direct: (514) 574-0233</h3>
                         <h3 class="info">David@ArmstrongLife@ca</h3>
                     </div>
+
+                    <div class="second-page"><h3>2/2</h3></div>
 
                     <div class="footnote-end">
                         <hr class="footnote-hr">

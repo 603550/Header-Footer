@@ -1,0 +1,1061 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+
+<head>
+<script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/jslibrary/1647410350244/sfdc/NetworkTracking.js" type="text/javascript"></script><script>try{ NetworkTracking.init('/_ui/networks/tracking/NetworkTrackingServlet', 'network', '066Hu000003JoRO'); }catch(x){}</script><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+   
+
+   <script type="text/javascript">
+        window.onload = function () {
+            window.print();
+        }
+    </script>
+
+    <style>
+        @media print {
+            body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            }
+        }
+
+
+        @font-face {
+            font-family: 'liber-franklin-regular';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'pt-serif-caption';
+            src: url(https://603550.github.io/Header-Footer/fonts/PTSerifCaption-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'Liber-Franklin-italic';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Italic.ttf);
+        }
+
+        @font-face {
+            font-family: 'C-School';
+            src: url(https://603550.github.io/Header-Footer/fonts/CenturySchoolbook.otf);
+        }
+
+
+        p {
+            font-family: "New Century Schoolbook", Times, serif
+        }
+
+
+
+
+		.page1-header,
+		        .page1-header-space {
+		            height: 140px;
+		        }
+
+		        .page1-footer,
+		        .page1-footer-space {
+		            height: 50px;
+		        }
+
+		        .page1-footer {
+		            position: fixed;
+		            bottom: 0;
+		            width: 100%;
+		            /* for demo */
+		            background: #FFFFFF;
+		            /* for demo */
+		            margin-top: 1000;
+		        }
+
+		        .page1-header {
+		            position: fixed;
+		            top: 0mm;
+		            width: 100%;
+		            height: 100px;
+		            /* for demo */
+		            background: #FFFFFF;
+		            z-index: 0;
+		            /* for demo */
+
+		        }
+
+
+			  
+
+			           .date1 {
+			               font-size: 14px;
+			               color: #999999;
+			               font-family: 'liber-franklin-regular';
+			               margin-top: 0px;
+			               margin-bottom: 2px;
+			               width: 100vw;
+			               font-weight: 100;
+			               z-index: 10;
+			               position: relative;
+			               bottom: 40px;
+			               height: 15px;
+			               text-align: right;
+			           }
+
+			           .title1 {
+			               font-family: "liber-franklin-bold";
+			               font-size: 17px;
+			               margin-top: 5px;
+			               margin-bottom: 5px;
+			               height: 18px;
+			               position: relative;
+			               bottom: 18px;
+			           }
+
+			           .non-bold-title1 {
+			               font-family: "liber-franklin-regular";
+			               font-size: 17px;
+			               margin-top: 0px;
+			               font-weight: lighter;
+			               margin-bottom: 5px;
+			               position: relative;
+			               bottom: 15px;
+			               height: 40px;
+			           }
+
+
+        .page-header,
+        .page-header-space {
+            height: 115px;
+        }
+
+        .page-footer,
+        .page-footer-space {
+            
+        }
+
+        .page-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* for demo */
+            background: #FFFFFF;
+            /* for demo */
+            margin-top: 1000px;
+        }
+
+        .page-header {
+            position: fixed;
+            top: 0mm;
+            width: 100%;
+            height: 100px;
+            /* for demo */
+            background: #FFFFFF;
+            z-index: 0;
+            /* for demo */
+
+        }
+
+        hr {
+            margin-top: 10px;
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        @media print {
+            thead {
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        @page {
+            margin-left: 18mm;
+            margin-right: 20mm;
+            overflow: visible;
+        }
+
+        @page {
+            margin-bottom: 15.5mm;
+        }
+
+        .bsd {
+            color: #666666;
+            font-weight: lighter;
+            font-size: 12px;
+            font-family: 'liber-franklin-regular';
+            text-align: right;
+            margin-right: 26px;
+            margin-bottom: 0;
+
+        }
+
+        .armstrong-logo-text {
+            font-family: 'pt-serif-caption';
+            font-weight: 300;
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 57px;
+            vertical-align: top;
+
+        }
+
+        .logo-image {
+            width: 258px;
+            height: auto;
+            display: block;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #999999;
+            font-family: 'liber-franklin-regular';
+            margin-top: 0px;
+            margin-bottom: 20px;
+            width: 100vw;
+            font-weight: 100;
+            z-index: 10;
+            position: relative;
+            bottom: 50px;
+            height: 15px;
+            text-align: right;
+        }
+
+        .title {
+            font-family: "liber-franklin-regular";
+            font-size: 18px;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            height: 5px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .non-bold-title {
+            font-family: "liber-franklin-regular";
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            position: relative;
+            bottom: 25px;
+            height: 3px;
+        }
+
+        p {
+            line-height: 20px;
+            font-family: "C-School";
+            font-size: 0.95rem;
+        }
+        
+          h5 {
+            line-height: 0px;
+                    font-family: "liber-franklin-bold";
+            font-size: 16px;
+
+        }
+
+        .empty-space {
+            height: 150px;
+        }
+
+        .footer-row td {
+            color: #666666;
+            font-size: 11px;
+            padding-left: 0;
+        }
+
+
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+          .footer-note td {
+            color: #666666;
+            font-size: 13px;
+            padding-left: 0;
+            font-style: italic;
+        }
+
+
+        .footer-note {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .page-footer table {
+            margin-top: 5px;
+        }
+
+        .spacing-right-first {
+            margin-right: 48px;
+        }
+
+        .spacing-right-second {
+            margin-right: 48px;
+        }
+
+        .signature {
+            font-family: "C-School";
+            font-size: 16px;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 20px;
+        }
+
+        .signature span {
+            font-size: 12px;
+        }
+
+        .info {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 100;
+            height: 20px;
+            font-family: "C-School";
+        }
+
+        .footnote-end h4 {
+            color: #666666;
+            font-family: "Liber-Franklin-italic";
+            margin: 1px 0;
+            font-size: 13px;
+            height: 12px;
+            font-weight: 100;
+            text-align: left;
+            margin-bottom: 4px
+        }
+
+        #pageFooter {
+            display: table-footer-group;
+        }
+
+        #pageFooter:after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .footnote-hr {
+            margin-top: 20px;
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .footnote-end {
+            position: absolute;
+            top: 1950px;
+        }
+
+        .first-page {
+            position: relative;
+            top: 835px;
+            left: 10px;
+        }
+
+        .first-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 100;
+            color: #666666;
+            text-align: right;
+        }
+
+        @page {
+            overflow: visible;
+        }
+
+        .second-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 200;
+            color: #666666;
+            text-align: right;
+        }
+
+        .second-page {
+            position: absolute;
+            top: 2000px;
+            left: 800px;
+        }
+
+        .justify-left {
+            text-align: left;
+        }
+
+        .justify-center {
+            text-align: center;
+        }
+
+        .justify-right {
+            text-align: right;
+        }
+
+        .footer-row td {
+            font-family: "liber-franklin-regular";
+            font-size: 0.65rem;
+            font-weight: 100;
+            width: 33.33%;
+        }
+
+        .footer-row {
+            width: 99vw;
+        }
+
+        .pusher-hr {
+            margin-top: 15px;
+        }
+
+        .entire-body table {
+            table-layout: fixed;
+            font-size: 0.80rem;
+            border-collapse: collapse;
+            width: 100%;
+            border-color: white;
+            border-style: none;
+            font-family: "C-School";
+        }
+
+        .entire-body table tr:first-child {
+            border-bottom-color: black;
+        }
+
+        .entire-body table tr{
+            border-collapse: collapse;
+        }
+
+        .entire-body table td {
+            height: 5px;
+            text-align: center;
+            padding: 8px;
+            border-collapse: collapse;
+            font-family: "C-School";
+        }
+        
+    
+        ol {
+            line-height: 20px;
+            font-family: "C-School";
+        }
+        
+        ul {
+            line-height: 20px;
+            font-family: "C-School";
+        }
+
+        .table-header td {
+            text-align: center;
+            background-color: #cfe3f2;
+            border: 1px solid #cfe3f2;
+            line-height: 1.1;
+            font-weight: normal;
+        }
+
+        .data-table-body tr:nth-child(5n) {
+            background-color: #f2f3f2;
+        }
+
+        .data-table-body tr td {
+            padding: 4.4px;
+             padding-bottom: 1.1px !important;
+            border: 1px dashed #bbbbbb;
+            line-height: 1.15;
+        }
+        
+
+
+        .data-table-body tr td:nth-child(1), .data-table-body tr td:nth-child(4), .data-table-body tr td:last-child  {
+            border-right: 1px solid #bbbbbb;
+        }
+
+        .data-table-body tr td:nth-child(1) {
+            border-left: 0;
+        } 
+
+        .data-table-body tr td:last-child {
+            border-right: 0;
+        } 
+
+        .data-table-body tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .data-table-body tr td:last-child {
+            border-left: 3px double #bbbbbb;
+        }
+
+        .data-table-body tr td:first-child {
+            border-left-style: solid;
+        }
+
+        .data-table-body tr:last-child td {
+            border-bottom-style: solid;
+        }
+
+        .data-table-body tr td:nth-child(3), .data-table-body tr td:nth-child(6) {
+            background-color: #d8ebd3;
+        }
+
+        .table-explanation {
+            font-size: .46rem;
+            color: #666666;
+          
+           
+        }
+
+        .table-explanation td {
+            padding: 3px 0 !important;
+            line-height: 1;
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+            font-family: "liber-franklin-regular"; !important;
+        }
+
+        .data-table-body tr:first-child td {
+            border-top: 0;
+            padding-top: -5px;
+        }
+
+        .table-explanation {
+            border-spacing: 20px;
+        }
+
+        /* Here you can choose which row is highlighted and also you can choose the color of the highlight */
+        .data-table-body tr:nth-child(10) td {
+            background-color: #fff111;
+             font-weight: 700;
+        }    
+        </style>
+    </head>
+<body>
+    <div class="page-header" style="text-align: Left">
+        <h3 class="bsd">BS"D</h3>
+            <h1 class="armstrong-logo-text">Armstrong</h1>
+            <img class="logo-image" src="https://storage.googleapis.com/cdn.armfs.net/images/logo-footer.png" />
+            <hr />
+           
+           
+    </div>
+
+    <div class="page-footer">
+        <table>  <tbody>
+<tr class="footer-note">
+<td class="justify-left"> 
+    Annual ACB = Previous year's ACB (CAD) + Premium (CAD, as on Jun 26) - NCPI (CAD, as on Dec 31), non-negative values.<br />
+    Annual NCPI (USD) per 308(1) of the Act using M NS CIA 1986-92 Mortality table. For discussion purposes, not tax advice.
+
+</td>
+
+</tr>
+        </tbody>
+        </table>
+       
+        <table>
+            <tbody>
+            
+      
+            <tr class="footer-row">
+          
+                 <hr class="pusher-hr" />
+                 
+     
+                <td class="justify-left">Armstrong Financial USA  Inc. / E&amp;OE</td>
+                <td class="justify-center">Email: info@ArmstrongLife.net</td>
+                <td class="justify-right">Tel: (833) 603-5500 / Fax: (954) 256-0220</td>
+            </tr>
+            <tr>
+                <span id="pageNumber"></span>
+               
+                 
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+
+
+   <tbody>
+             
+			 
+
+	         <thead>
+	             <tr>
+	                 <td>
+                    
+	                     <div class="page1-header-space"></div>
+	                 </td>
+	             </tr>
+	         </thead>
+			 
+			 
+			            
+                        <tr class="add-top">
+                        <td>              
+                        <div class="page1" style="line-height: 3.2;">
+                        <h3 class="date1"> July 31,  2023</h3>
+                        <h2 class="title1">Attn: David Kakon </h2>
+                        <h2 class="non-bold-title1">Re: Prudential UL Policy Summary / 112358</h2>
+                        
+                        
+                        <div class="entire-body1">
+                        <p><p>Dear David, please see the attached life insurance policy summary for your review. 
+                         
+                          <br /><br />
+                                               
+                                               
+                         <strong>Insured: </strong>David Kakon (37M  NS)<br />
+                         <strong>Policy No.: </strong>112358<br />
+                         <strong>Carrier: </strong>Prudential
+                         <br />
+                         <strong>Plan: </strong><span id="j_id0:j_id43">20 Pay Survivorship GUL / Level UL </span> 
+                         <br />
+                         <strong>Policy Date: </strong> June 26,  2013<br />
+                         <strong>Rating Class: </strong>Standard <br />
+                         <br />
+                         <strong>Face Amount: </strong>USD 1,000,000.00<br /><span id="j_id0:j_id64">  
+                         <strong>Premium: </strong>USD 12,000.00 (Annual)<br /></span>
+                         <strong>Owner: </strong>David Kakon<br />
+                         <strong>Beneficiary: </strong>112358 Canada Inc.<br />
+                         <br /> 
+                        </p></p> 
+
+      
+                         
+                        <h3 class="signature" style="margin-top: 10px;"> David Emmanuel</h3>
+                        <h3 class="signature" style="margin-bottom: 10px;">Direct: (514) 574-0233</h3>
+                        <h3 class="info">Armstrong Financial USA  Inc.</h3>
+                        <h3 class="info">Tel. (833) 603-5500</h3>
+                        <h3 class="info">info@ArmstrongLife.net</h3>
+                       
+                        </div> 
+                  </div>
+                </td>
+            </tr>
+        </tbody>
+
+
+
+
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <td>
+                    
+                    <div class="page-header-space"></div>
+                </td>
+            </tr>
+        </thead>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        <tbody><div style="page-break-after:always;">
+            <tr class="add-top">
+                <td>
+              
+                    <div class="page" style="line-height: 1.0;">
+
+                       <h3 class="title">ACB Ledger for Policy 112358<small><sup></sup></small></h3> <h3 class="date">March 12th, 2023</h3>
+               <h2 class="non-bold-title">Policy effective date: June 26,  2013</h2>
+                                     <div class="entire-body">
+                              
+                           
+<p style="margin-top: 0; margin-bottom: 0;">
+    <table border="1" cellpadding="0" cellspacing="0" style="position: relative;">
+           
+        <tr class="table-header">
+            <td colspan="1" rowspan="1">Year</td>
+            <td colspan="1" rowspan="1">Premium (USD)</td>
+            <td colspan="1" rowspan="1">USD/CAD (Jun 26)</td>
+            <td colspan="1" rowspan="1">Premium (CAD)</td>
+            <td colspan="1" rowspan="1">NCPI (USD)</td>
+            <td colspan="1" rowspan="1">USD:CAD (Dec 31)</td>
+            <td colspan="1" rowspan="1">NCPI (CAD)</td>
+            <td colspan="1" rowspan="1">ACB (CAD)</td>
+        </tr>
+
+        <tr class="table-explanation">
+            <td colspan="1" rowspan="1"></td>
+            <td colspan="1" rowspan="1"></td>
+            <td colspan="1" rowspan="1"></td>
+            <td colspan="1" rowspan="1">A</td>
+            <td colspan="1" rowspan="1"></td>
+            <td colspan="1" rowspan="1"></td>
+            <td colspan="1" rowspan="1">B</td>
+            <td colspan="1" rowspan="1">ACB = ACB(Y-1) + A - B</td>
+        </tr>
+
+
+          
+        <tbody class="data-table-body">
+<tr>
+    <td colspan="1" rowspan="1">2013</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $4,200</td>
+    <td colspan="1" rowspan="1"> 1.06</td>
+    <td colspan="1" rowspan="1"> $4,460</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2014</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $4,196</td>
+    <td colspan="1" rowspan="1"> 1.16</td>
+    <td colspan="1" rowspan="1"> $4,873</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2015</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $5,190</td>
+    <td colspan="1" rowspan="1"> 1.39</td>
+    <td colspan="1" rowspan="1"> $7,214</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2016</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $5,983</td>
+    <td colspan="1" rowspan="1"> 1.34</td>
+    <td colspan="1" rowspan="1"> $8,039</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2017</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $6,774</td>
+    <td colspan="1" rowspan="1"> 1.26</td>
+    <td colspan="1" rowspan="1"> $8,522</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2018</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $7,860</td>
+    <td colspan="1" rowspan="1"> 1.34</td>
+    <td colspan="1" rowspan="1"> $10,528</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2019</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $9,041</td>
+    <td colspan="1" rowspan="1"> 1.30</td>
+    <td colspan="1" rowspan="1"> $11,755</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2020</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $10,317</td>
+    <td colspan="1" rowspan="1"> 1.23</td>
+    <td colspan="1" rowspan="1"> $12,741</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2021</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $11,786</td>
+    <td colspan="1" rowspan="1"> 1.26</td>
+    <td colspan="1" rowspan="1"> $14,897</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2022</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $13,354</td>
+    <td colspan="1" rowspan="1"> 1.36</td>
+    <td colspan="1" rowspan="1"> $18,121</td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2023</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"> 1.32</td>
+    <td colspan="1" rowspan="1"> $15,782</td>
+    <td colspan="1" rowspan="1"> $15,216</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2024</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $17,371</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2025</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $19,719</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2026</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $22,459</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2027</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $25,493</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2028</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $28,920</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2029</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $32,964</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2030</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $36,358</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2031</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $40,096</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2032</td>
+    <td colspan="1" rowspan="1"> $12,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $44,489</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2033</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $49,100</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2034</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $54,200</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2035</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $60,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2036</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $66,600</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2037</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $74,000</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2038</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $82,400</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2039</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $91,900</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2040</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $102,600</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2041</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $114,700</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+    <td colspan="1" rowspan="1">2042</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"> $128,400</td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+    <td colspan="1" rowspan="1"></td>
+</tr>
+           
+           
+           
+</tbody></table></p> 
+                    </div> 
+                  </div>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="page-footer-space">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+

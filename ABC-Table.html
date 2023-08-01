@@ -1,0 +1,619 @@
+<apex:page sidebar="false" showHeader="false" applyHtmlTag="false" applyBodyTag="false" controller="MemoAcbNewController" standardStylesheets="false" cache="false">
+
+
+<html>
+
+<head>
+   
+
+   <script type="text/javascript">
+        window.onload = function () {
+            window.print();
+        }
+    </script>
+
+    <style>
+        @media print {
+            body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            }
+        }
+
+
+        @font-face {
+            font-family: 'liber-franklin-regular';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'pt-serif-caption';
+            src: url(https://603550.github.io/Header-Footer/fonts/PTSerifCaption-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'liber-franklin-bold';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: 'Liber-Franklin-italic';
+            src: url(https://603550.github.io/Header-Footer/fonts/LibreFranklin-Italic.ttf);
+        }
+
+        @font-face {
+            font-family: 'C-School';
+            src: url(https://603550.github.io/Header-Footer/fonts/CenturySchoolbook.otf);
+        }
+
+
+        p {
+            font-family: "New Century Schoolbook", Times, serif
+        }
+
+
+
+
+        .page-header,
+        .page-header-space {
+            height: 115px;
+        }
+
+        .page-footer,
+        .page-footer-space {
+            <!--height: 80px;-->
+        }
+
+        .page-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* for demo */
+            background: #FFFFFF;
+            /* for demo */
+            margin-top: 1000px;
+        }
+
+        .page-header {
+            position: fixed;
+            top: 0mm;
+            width: 100%;
+            height: 100px;
+            /* for demo */
+            background: #FFFFFF;
+            z-index: 0;
+            /* for demo */
+
+        }
+
+        hr {
+            margin-top: 10px;
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        @media print {
+            thead {
+                display: table-header-group;
+            }
+
+            tfoot {
+                display: table-footer-group;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        @page {
+            margin-left: 18mm;
+            margin-right: 20mm;
+            overflow: visible;
+        }
+
+        @page {
+            margin-bottom: 15.5mm;
+        }
+
+        .bsd {
+            color: #666666;
+            font-weight: lighter;
+            font-size: 12px;
+            font-family: 'liber-franklin-regular';
+            text-align: right;
+            margin-right: 26px;
+            margin-bottom: 0;
+
+        }
+
+        .armstrong-logo-text {
+            font-family: 'pt-serif-caption';
+            font-weight: 300;
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 57px;
+            vertical-align: top;
+
+        }
+
+        .logo-image {
+            width: 258px;
+            height: auto;
+            display: block;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #999999;
+            font-family: 'liber-franklin-regular';
+            margin-top: 0px;
+            margin-bottom: 20px;
+            width: 100vw;
+            font-weight: 100;
+            z-index: 10;
+            position: relative;
+            bottom: 50px;
+            height: 15px;
+            text-align: right;
+        }
+
+        .title {
+            font-family: "liber-franklin-regular";
+            font-size: 18px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            height: 5px;
+            position: relative;
+            bottom: 5px;
+        }
+
+        .non-bold-title {
+            font-family: "liber-franklin-regular";
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            position: relative;
+            bottom: 25px;
+            height: 3px;
+        }
+
+        p {
+            line-height: 20px;
+            font-family: "C-School";
+            font-size: 0.95rem;
+        }
+        
+          h5 {
+            line-height: 0px;
+                    font-family: "liber-franklin-bold";
+            font-size: 16px;
+
+        }
+
+        .empty-space {
+            height: 150px;
+        }
+
+        .footer-row td {
+            color: #666666;
+            font-size: 11px;
+            padding-left: 0;
+        }
+
+
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+          .footer-note td {
+            color: #666666;
+            font-size: 13px;
+            padding-left: 0;
+            font-style: italic;
+        }
+
+
+        .footer-note {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .page-footer table {
+            margin-top: 5px;
+        }
+
+        .spacing-right-first {
+            margin-right: 48px;
+        }
+
+        .spacing-right-second {
+            margin-right: 48px;
+        }
+
+        .signature {
+            font-family: "C-School";
+            font-size: 16px;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 20px;
+        }
+
+        .signature span {
+            font-size: 12px;
+        }
+
+        .info {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 100;
+            height: 20px;
+            font-family: "C-School";
+        }
+
+        .footnote-end h4 {
+            color: #666666;
+            font-family: "Liber-Franklin-italic";
+            margin: 1px 0;
+            font-size: 13px;
+            height: 12px;
+            font-weight: 100;
+            text-align: left;
+            margin-bottom: 4px
+        }
+
+        #pageFooter {
+            display: table-footer-group;
+        }
+
+        #pageFooter:after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .footnote-hr {
+            margin-top: 20px;
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .footnote-end {
+            position: absolute;
+            top: 1950px;
+        }
+
+        .first-page {
+            position: relative;
+            top: 835px;
+            left: 10px;
+        }
+
+        .first-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 100;
+            color: #666666;
+            text-align: right;
+        }
+
+        @page {
+            overflow: visible;
+        }
+
+        .second-page h3 {
+            margin: 0;
+            font-size: 11px;
+            font-weight: 200;
+            color: #666666;
+            text-align: right;
+        }
+
+        .second-page {
+            position: absolute;
+            top: 2000px;
+            left: 800px;
+        }
+
+        .justify-left {
+            text-align: left;
+        }
+
+        .justify-center {
+            text-align: center;
+        }
+
+        .justify-right {
+            text-align: right;
+        }
+
+        .footer-row td {
+            font-family: "liber-franklin-regular";
+            font-size: 0.65rem;
+            font-weight: 100;
+            width: 33.33%;
+        }
+
+        .footer-row {
+            width: 99vw;
+        }
+
+        .pusher-hr {
+            margin-top: 15px;
+        }
+
+        .entire-body table {
+            table-layout: fixed;
+            font-size: 0.80rem;
+            border-collapse: collapse;
+            width: 100%;
+            border-color: white;
+            border-style: none;
+            font-family: "C-School";
+        }
+
+        .entire-body table tr:first-child {
+            border-bottom-color: black;
+        }
+
+        .entire-body table tr{
+            border-collapse: collapse;
+        }
+
+        .entire-body table td {
+            height: 5px;
+            text-align: center;
+            padding: 8px;
+            border-collapse: collapse;
+            font-family: "C-School";
+        }
+        
+    
+        ol {
+            line-height: 20px;
+            font-family: "C-School";
+        }
+        
+        ul {
+            line-height: 20px;
+            font-family: "C-School";
+        }
+
+        .table-header td {
+            text-align: center;
+            background-color: #cfe3f2;
+            border: 1px solid #cfe3f2;
+            line-height: 1.1;
+            font-weight: normal;
+        }
+
+        .data-table-body tr:nth-child(5n) {
+            background-color: #f2f3f2;
+        }
+
+        .data-table-body tr td {
+            padding: 4.4px;
+             padding-bottom: 1.1px !important;
+            border: 1px dashed #bbbbbb;
+            line-height: 1.15;
+        }
+        
+
+
+        .data-table-body tr td:nth-child(1), .data-table-body tr td:nth-child(4), .data-table-body tr td:last-child  {
+            border-right: 1px solid #bbbbbb;
+        }
+
+        .data-table-body tr td:nth-child(1) {
+            border-left: 0;
+        } 
+
+        .data-table-body tr td:last-child {
+            border-right: 0;
+        } 
+
+        .data-table-body tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .data-table-body tr td:last-child {
+            border-left: 3px double #bbbbbb;
+        }
+
+        .data-table-body tr td:first-child {
+            border-left-style: solid;
+        }
+
+        .data-table-body tr:last-child td {
+            border-bottom-style: solid;
+        }
+
+        .data-table-body tr td:nth-child(3), .data-table-body tr td:nth-child(6) {
+            background-color: #d8ebd3;
+        }
+
+        .table-explanation {
+            font-size: .46rem;
+            color: #666666;
+          
+           
+        }
+
+        .table-explanation td {
+            padding: 3px 0 !important;
+            line-height: 1;
+            border-bottom: 1px solid black;
+            margin-bottom: 5px;
+            font-family: "liber-franklin-regular"; !important;
+        }
+
+        .data-table-body tr:first-child td {
+            border-top: 0;
+            padding-top: -5px;
+        }
+
+        .table-explanation {
+            border-spacing: 20px;
+        }
+
+        /* Here you can choose which row is highlighted and also you can choose the color of the highlight */
+        .data-table-body tr:nth-child({!ACB.Select_Row__c}) td {
+            background-color: #fff111;
+             font-weight: 700;
+        }    
+        </style>
+    </head>
+<body>
+<apex:repeat value="{!resultWrapList}" var="rwl">
+    <div class="page-header" style="text-align: Left">
+        <h3 class="bsd">BS"D</h3>
+            <h1 class="armstrong-logo-text">Armstrong</h1>
+            <img class="logo-image" src="https://storage.googleapis.com/cdn.armfs.net/images/logo-footer.png" />
+            <hr />
+           
+           
+    </div>
+
+    <div class="page-footer" >
+        <table>  <tbody>
+<tr class="footer-note">
+<td class="justify-left"> 
+    Annual ACB = Previous year's ACB (CAD) + Premium (CAD, as on <apex:outputText value="{0, date, MMM dd}"><apex:param value="{!ACB.Policy__r.Effective_Date__c}"/></apex:outputText>) - NCPI (CAD, as on Dec 31), non-negative values.<br/>
+    Annual NCPI (USD) per 308(1) of the Act using M{!ACB.Policy__r.Joint_Age__c} NS CIA 1986-92 Mortality table. For discussion purposes, not tax advice.
+
+</td>
+
+</tr>
+        </tbody>
+        </table>
+       
+        <table>
+            <tbody>
+            
+      
+            <tr class="footer-row">
+          
+                 <hr class="pusher-hr" />
+                 
+     
+                <td class="justify-left">Armstrong Financial USA  Inc. / E&amp;OE</td>
+                <td class="justify-center">Email: info@ArmstrongLife.net</td>
+                <td class="justify-right">Tel: (833) 603-5500 / Fax: (954) 256-0220</td>
+            </tr>
+            <tr>
+                <span id="pageNumber"></span>
+               
+                 
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <td>
+                    
+                    <div class="page-header-space"></div>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="add-top">
+                <td>
+              
+                    <div class="page" style="line-height: 1.0;">
+
+                       <h3 class="title">ACB Ledger for Policy {!ACB.Policy__r.Policy_No__c}<small><sup></sup></small></h3> <h3 class="date">March 12th, 2023</h3>
+               <h2 class="non-bold-title">Policy effective date: <apex:outputText value="{0, date, MMMM d','  yyyy}"><apex:param value="{!ACB.Policy__r.Effective_Date__c}"/></apex:outputText></h2>
+                                     <div class="entire-body">
+                              
+                           
+<p style="margin-top: 0; margin-bottom: 0;">
+    <table border="1" cellpadding="0" cellspacing="0" style="position: relative;">
+        <!--header Row-->   
+        <tr class="table-header">
+            <td colspan="1" rowspan="1" >Year</td>
+            <td colspan="1" rowspan="1" >Premium (USD)</td>
+            <td colspan="1" rowspan="1" >USD/CAD (<apex:outputText value="{0, date,MMM dd}"><apex:param value="{!ACB.Policy__r.Effective_Date__c}"/></apex:outputText>)</td>
+            <td colspan="1" rowspan="1" >Premium (CAD)</td>
+            <td colspan="1" rowspan="1" >NCPI (USD)</td>
+            <td colspan="1" rowspan="1" >USD:CAD (Dec 31)</td>
+            <td colspan="1" rowspan="1" >NCPI (CAD)</td>
+            <td colspan="1" rowspan="1" >ACB (CAD)</td>
+        </tr>
+
+        <tr class="table-explanation">
+            <td colspan="1" rowspan="1" ></td>
+            <td colspan="1" rowspan="1" ></td>
+            <td colspan="1" rowspan="1" ></td>
+            <td colspan="1" rowspan="1" >A</td>
+            <td colspan="1" rowspan="1" ></td>
+            <td colspan="1" rowspan="1" ></td>
+            <td colspan="1" rowspan="1" >B</td>
+            <td colspan="1" rowspan="1" >ACB = ACB(Y-1) + A - B</td>
+        </tr>
+
+
+        <!--table body with the data rows-->  
+        <tbody class="data-table-body">
+           
+           
+           
+           <apex:repeat value="{!rwl}" var="rw">
+<tr>
+    <td colspan='1' rowspan='1'>{!rw.year}</td>
+    <td colspan='1' rowspan='1' ><apex:outputText rendered="{!rw.premiumUsd > 0}" value="{0, number, ¤#,##0}"><apex:param value="{!rw.premiumUsd}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1'><apex:outputText rendered="{!rw.usdCadMarch > 0}" value="{0, number, 0.00}"><apex:param value="{!rw.usdCadMarch}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1' ><apex:outputText rendered="{!rw.premiumCad > 0}" value="{0, number, ¤#,##0}"><apex:param value="{!rw.premiumCad}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1' ><apex:outputText rendered="{!rw.ncpiUsd > 0}" value="{0, number, ¤#,##0}"><apex:param value="{!rw.ncpiUsd}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1'><apex:outputText rendered="{!rw.usdCadDec > 0}" value="{0, number, 0.00}"><apex:param value="{!rw.usdCadDec}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1' ><apex:outputText rendered="{!rw.ncpiCad > 0}" value="{0, number, ¤#,##0}"><apex:param value="{!rw.ncpiCad}"/></apex:outputText></td>
+    <td colspan='1' rowspan='1'><apex:outputText rendered="{!rw.acbCad > 0}" value="{0, number, ¤#,##0}"><apex:param value="{!rw.acbCad}"/></apex:outputText></td>
+</tr>
+</apex:repeat>
+           
+           
+           
+</tbody></table></p> 
+                    </div> 
+                  </div>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="page-footer-space">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    </apex:repeat>
+</body>
+</html>
+
+
+</apex:page>
